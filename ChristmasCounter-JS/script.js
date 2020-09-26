@@ -1,40 +1,35 @@
-var myVar = setInterval(myFunction, 1000); 
+setInterval(remainingTime, 1000); 
 
-function myFunction() {
-    
-    var date1 = new Date();
-    const date2 = new Date('12/25/2020');
-    const diffTime = Math.abs(date2 - date1);
-    console.log(diffTime + " milliseconds");  
+function remainingTime() {
+    var actualDate = new Date();
+    const christmasDate = new Date('12/25/2020');
+    const diffTime = Math.abs(christmasDate - actualDate);
+
+    console.log(diffTime + " milliseconds");
+
     //calcule jours 
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     console.log(diffDays + " days");
 
-    //calcule heurs
-    const diffhours = 24 - date1.getHours();
-    console.log(diffhours + " hours");
+    //calcule heures
+    const diffHours = 24 - actualDate.getHours();
+    console.log(diffHours + " hours");
     
-    //calcule  minute
-    const diffMinute = 59 - date1.getMinutes();
-    console.log(diffMinute + " Minutes");
+    //calcule minutes
+    const diffMinutes = 59 - actualDate.getMinutes();
+    console.log(diffMinutes + " minutes");
     
-    //calcule  seconde
-    const diffSeconde = 59 - date1.getSeconds();
-    console.log(diffSeconde + " Secondes");
+    //calcule secondes
+    const diffSecondes = 59 - actualDate.getSeconds();
+    console.log(diffSecondes + " secondes");
     
     //log
-      
- 
-
     console.log(typeof(diffDays));
     
     //affichage 
-    document.getElementById("days").innerHTML = "jours : " + diffDays;
-    document.getElementById("hours").innerHTML = "heurs : " + diffhours;
-    document.getElementById("Minutes").innerHTML = "Minutes : " + diffMinute;
-    document.getElementById("Seconds").innerHTML = "Secondes : " + diffSeconde;
-
-
+    document.getElementById("days").innerHTML = "Jours : " + diffDays;
+    document.getElementById("hours").innerHTML = "Heures : " + diffHours;
+    document.getElementById("minutes").innerHTML = "Minutes : " + diffMinutes;
+    document.getElementById("seconds").innerHTML = "Secondes : " + diffSecondes;
 }
-
-//to do formater l affichage et poffiner le css et changer la couleur de l arriere plan  
+//TODO: formater l'affichage, poffiner le css et changer la couleur de l'arrière plan  
