@@ -1,0 +1,90 @@
+html {
+    background-color: #C10012;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    font-size: 30px;
+  }
+  header {
+    text-align: center;
+  }
+  article {
+    margin-top: 10px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    text-align: left;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  footer {
+    font-size: 20px;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    color: #0000ee;
+    margin-bottom: 3px;
+    text-align: center;
+  
+  }
+  input,textarea,select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  hr{
+    width: 50%;
+    color:#fff;
+    border: 1px solid;
+    opacity: 0.5;
+  }
+  button,input[type="submit"] {
+    width: 100%;
+    font-size: 80%;
+    background-color: #4caf50;
+    color: white;
+    padding: 30px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  ::selection {
+    color: #fff;
+    background: #124078 ;
+  }
+  .travaux {
+    text-align: center;
+    color: gray;
+  }
+  /* #hCH {
+    font-style: italic;
+  } */
+  /* #hub{
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    margin-left:3px;
+    margin-top: 3px;
+    text-align: left;
+  } */
+  textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  
