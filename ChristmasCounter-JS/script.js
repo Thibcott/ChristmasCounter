@@ -32,4 +32,3 @@ function remainingTime() {
     document.getElementById("minutes").innerHTML = "Minutes : " + diffMinutes;
     document.getElementById("seconds").innerHTML = "Secondes : " + diffSecondes;
 }
-//TODO: formater l'affichage, poffiner le css et changer la couleur de l'arrière plan  
