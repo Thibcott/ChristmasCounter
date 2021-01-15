@@ -2,7 +2,7 @@ setInterval(remainingTime, 1000);
 
 function remainingTime() {
     var actualDate = new Date();
-    const christmasDate = new Date('2020-12-25T00:00');
+    const christmasDate = new Date('2021-12-25T00:00');
     const diffTime = Math.abs(christmasDate - actualDate);
 
     console.log(diffTime + " milliseconds");
